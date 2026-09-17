@@ -1,0 +1,23 @@
+# Vivado generates enormous amounts of garbage
+*.jou
+*.log
+*.str
+.Xil/
+build/
+vivado*/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.gen/
+*.xpr
+
+# simulation output
+*.vvp
+*.vcd
+__pycache__/
+*.pyc
+
+# generated vectors: regenerate with `make vectors`
+sim/vectors/
