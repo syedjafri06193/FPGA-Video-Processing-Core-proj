@@ -59,3 +59,11 @@ vivado -mode batch -source scripts/program.tcl
 | [v1](v1/) | 720p60 pipeline, Sobel + 3D LUT, 4 output modes, full simulation regression | — |
 
 Add a row per version as new iterations land.
+
+## Feedback
+
+Feedback, bug reports and ideas are welcome.
+
+- **Bugs or problems:** [open an issue](https://github.com/syedjafri06193/FPGA-Video-Processing-Core-proj/issues/new) and include your FPGA board, toolchain version, and steps to reproduce.
+- **Ideas or questions:** start a thread in [Discussions](https://github.com/syedjafri06193/FPGA-Video-Processing-Core-proj/discussions) (enable it under Settings → General → Features).
+- **Code changes:** pull requests are appreciated; please describe what you changed and how you tested it.
