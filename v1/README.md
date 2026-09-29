@@ -5,7 +5,7 @@ XC7S50-CSGA324-**1**), driving a DVI/HDMI display at 720p60 with 3×3 Sobel edge
 detection and 17³ 3D-LUT colour grading on a procedurally generated source,
 with runtime-selectable processing modes.
 
-The full design is in [`../Documentation/README.md`](../Documentation/README.md);
+The full design is in [`../docs/design.md`](../docs/design.md) (also as [PDF](../docs/design.pdf));
 code comments refer to it by section number throughout.
 
 ---

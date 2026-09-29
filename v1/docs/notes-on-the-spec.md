@@ -1,6 +1,6 @@
 # Notes on the design document
 
-The reference RTL in `Documentation/README.md` is described there as
+The reference RTL in `docs/design.md` is described there as
 "reference-quality but **not tested on hardware** ... a starting point to
 understand and adapt, not a drop-in library."  Taking that at its word, here is
 everything that changed on the way to something that simulates correctly, and
