@@ -1,5 +1,7 @@
 # FPGA Video Processing Core
 
+[![CI](https://github.com/syedjafri06193/FPGA-Video-Processing-Core-proj/actions/workflows/ci.yml/badge.svg)](https://github.com/syedjafri06193/FPGA-Video-Processing-Core-proj/actions/workflows/ci.yml)
+
 Real-time HDMI video pipeline on a Spartan-7 (Real Digital Boolean Board)
 implementing 3×3 Sobel edge detection and 17³ 3D-LUT colour grading.
 
@@ -13,23 +15,23 @@ implementing 3×3 Sobel edge detection and 17³ 3D-LUT colour grading.
 > Boolean Board has no HDMI input, and 1080p60 needs a 742.5 MHz clock that a
 > -1 speed-grade part cannot route. The design runs at **720p60** (and 1080p30
 > from the same pixel clock) on a procedural source. Full reasoning in
-> [`docs/design.md`](docs/design.md) §1–2.
+> [`1—Documentation/design.md`](1—Documentation/design.md) §1–2.
 
 ## Repository layout
 
 ```
 .
 ├── README.md          ← you are here
-├── docs/
+├── 1—Documentation/   ← all documentation (index in its README)
 │   ├── design.md      ← full design & build guide (the spec code comments cite)
-│   └── design.pdf     ← same guide, PDF
+│   ├── design.pdf     ← same guide, PDF
+│   └── v1/            timing, verification, bring-up, spec errata
 └── v1/                ← first implementation: RTL, testbenches, model, build
     ├── rtl/           synthesizable Verilog
     ├── sim/           one testbench per module + full-frame regression
     ├── model/         bit-exact Python golden model and vector tools
     ├── constraints/   boolean.xdc
-    ├── scripts/       Vivado build / program Tcl
-    └── docs/          timing, verification, bring-up, spec errata
+    └── scripts/       Vivado build / program Tcl
 ```
 
 Each `vN/` directory is a self-contained iteration of the design. Start with

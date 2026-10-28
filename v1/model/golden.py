@@ -17,7 +17,7 @@ That last one is subtle: ``>>`` on a negative number floors in both Python and
 Verilog's ``>>>``, so the two agree -- but only if the RTL uses a signed shift.
 The reference RTL in the design document does not (it slices ``p[12:4]`` out of
 a signed product and adds it as an unsigned value), which is a real bug for any
-pixel where the interpolation goes downhill.  See docs/notes-on-the-spec.md.
+pixel where the interpolation goes downhill.  See 1—Documentation/v1/notes-on-the-spec.md.
 """
 
 from __future__ import annotations

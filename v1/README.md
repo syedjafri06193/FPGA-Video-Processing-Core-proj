@@ -5,7 +5,7 @@ XC7S50-CSGA324-**1**), driving a DVI/HDMI display at 720p60 with 3×3 Sobel edge
 detection and 17³ 3D-LUT colour grading on a procedurally generated source,
 with runtime-selectable processing modes.
 
-The full design is in [`../docs/design.md`](../docs/design.md) (also as [PDF](../docs/design.pdf));
+The full design is in [`../1—Documentation/design.md`](../1—Documentation/design.md) (also as [PDF](../1—Documentation/design.pdf));
 code comments refer to it by section number throughout.
 
 ---
@@ -85,7 +85,7 @@ A $15 camera module is the natural upgrade.
 it.** `BUFG` tops out at 464 MHz and `BUFIO` at 600 MHz on a -1 speed grade,
 and the 1485 Mb/s serial rate exceeds the OSERDES limit of 950 Mb/s by 56%.
 Not a marginal overclock — unroutable. The arithmetic is in
-[`docs/timing.md`](docs/timing.md).
+[`../1—Documentation/v1/timing.md`](../1—Documentation/v1/timing.md).
 
 720p60 and 1080p30 share the same 74.25 MHz pixel clock, so both come from one
 bitstream with different constants. That is a legitimate 1080p claim and it is
@@ -126,8 +126,8 @@ because floating-point interpolation in Python against integer in Verilog gives
 | `tb_lut3d` | 5,185 pixels × 7 grades against the model |
 | `tb_pipeline` | A whole frame, four modes, two grades, pixel for pixel |
 
-[`docs/verification.md`](docs/verification.md) has the details;
-[`docs/bringup.md`](docs/bringup.md) is the black-screen decision tree.
+[`../1—Documentation/v1/verification.md`](../1—Documentation/v1/verification.md) has the details;
+[`../1—Documentation/v1/bringup.md`](../1—Documentation/v1/bringup.md) is the black-screen decision tree.
 
 ## Where this deviates from the design document
 
@@ -137,7 +137,7 @@ simulate, each caught by a named test — the signed-shift bug in the lerp, the
 per-bank LUT address carry, the permutation pipeline stage, the line-buffer
 skew, two SystemVerilog keyword collisions, and the identity LUT's 1 LSB
 deviation at the top node. They are written up in
-[`docs/notes-on-the-spec.md`](docs/notes-on-the-spec.md) with the arithmetic.
+[`../1—Documentation/v1/notes-on-the-spec.md`](../1—Documentation/v1/notes-on-the-spec.md) with the arithmetic.
 
 One deliberate architectural difference: the pipeline is free-running with
 `H_TOTAL`-long line delays rather than de-gated with `H_ACT`-long ones. It
