@@ -69,3 +69,39 @@ Feedback, bug reports and ideas are welcome.
 - **Bugs or problems:** [open an issue](https://github.com/syedjafri06193/FPGA-Video-Processing-Core-proj/issues/new) and include your FPGA board, toolchain version, and steps to reproduce.
 - **Ideas or questions:** start a thread in [Discussions](https://github.com/syedjafri06193/FPGA-Video-Processing-Core-proj/discussions).
 - **Code changes:** pull requests are appreciated; please describe what you changed and how you tested it.
+
+<!-- project-metrics:start -->
+## Project Metrics
+
+[![Stars](https://img.shields.io/github/stars/syedjafri06193/FPGA-Video-Processing-Core-proj?style=flat-square)](https://github.com/syedjafri06193/FPGA-Video-Processing-Core-proj/stargazers) [![Forks](https://img.shields.io/github/forks/syedjafri06193/FPGA-Video-Processing-Core-proj?style=flat-square)](https://github.com/syedjafri06193/FPGA-Video-Processing-Core-proj/forks) [![Open issues](https://img.shields.io/github/issues/syedjafri06193/FPGA-Video-Processing-Core-proj?style=flat-square)](https://github.com/syedjafri06193/FPGA-Video-Processing-Core-proj/issues) [![Last commit](https://img.shields.io/github/last-commit/syedjafri06193/FPGA-Video-Processing-Core-proj/improvements?style=flat-square)](https://github.com/syedjafri06193/FPGA-Video-Processing-Core-proj/commits/improvements) [![Commits](https://img.shields.io/github/commit-activity/t/syedjafri06193/FPGA-Video-Processing-Core-proj?style=flat-square)](https://github.com/syedjafri06193/FPGA-Video-Processing-Core-proj/commits/improvements) [![Top language](https://img.shields.io/github/languages/top/syedjafri06193/FPGA-Video-Processing-Core-proj?style=flat-square)](https://github.com/syedjafri06193/FPGA-Video-Processing-Core-proj) [![Repo size](https://img.shields.io/github/repo-size/syedjafri06193/FPGA-Video-Processing-Core-proj?style=flat-square)](https://github.com/syedjafri06193/FPGA-Video-Processing-Core-proj)
+
+### Code
+
+| Metric | Value |
+|---|---|
+| Lines of code | 3,050 |
+| Source files | 42 |
+| Tracked files | 56 |
+| Documentation | 8 Markdown files (16,367 words), 1 PDF |
+| Commits | 13 |
+| Contributors | 1 |
+| Active | 2026-09-11 → 2026-10-28 |
+
+| Language | Lines | Share |
+|---|---:|---:|
+| verilog | 2,407 | 78.9% |
+| Python | 450 | 14.8% |
+| Makefile | 112 | 3.7% |
+| Tcl | 81 | 2.7% |
+
+### Performance
+
+| Metric | Result |
+|---|---|
+| `tb_pipeline` regression | Full 64×64 frame bit-exact vs reference model, 4 modes × 2 grades |
+| 720p60 / 1080p30 serial clock | 371.25 MHz (under 464 MHz BUFG limit) |
+
+<sub>Measured figures recorded in [`1—Documentation/v1/verification.md`](1%E2%80%94Documentation/v1/verification.md).</sub>
+
+<sub>Code stats as of 2026-10-28, counted with pygount (comments and blank lines excluded). Badges update live.</sub>
+<!-- project-metrics:end -->
