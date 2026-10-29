@@ -28,7 +28,7 @@ refresh_hw_device $dev
 
 puts "programmed $bitfile"
 puts ""
-puts "If the monitor stays dark, work down the list in docs/bringup.md --"
+puts "If the monitor stays dark, work down the list in 1—Documentation/v1/bringup.md --"
 puts "start with led\[0\] (MMCM locked) and the measured pixel clock on the"
 puts "seven-segment display (hold btn\[1\])."
 
